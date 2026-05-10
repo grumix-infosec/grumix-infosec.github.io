@@ -15,6 +15,7 @@ This writeup details the exploitation of a legacy Windows system, specifically f
 
 ## Initial Enumeration
 Nmap Scan
+
 We begin starting with **nmap** scan inside msfconsole: 
 ```
  msf > nmap -sS -sV -sC -p- 10.112.163.200 
