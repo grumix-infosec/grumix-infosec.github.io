@@ -4,17 +4,20 @@ author: Grumix
 date: 2026-05-10 14:10:00 +0300
 categories: [Writeups, TryHackMe]
 tags: [metasploit, windows, eternalblue, ms17-010]
+render_with_liquid: false
+media_subpath: /images/Metasploit_Introduction_EternalBlue/
 ---
 Compromising Windows 7 via MS17-010 (EternalBlue) - A Metasploit Writeup for TryHackMe
 
-Metasploit Exploitation was a room that focused on the fundamentals of the Metasploit Framework and legacy service exploitation. We started by performing an Nmap scan to identify an unpatched Windows 7 target, followed by vulnerability verification using an SMB scanner to confirm the presence of MS17-010. From there, we utilized the EternalBlue exploit to obtain an interactive Meterpreter session with NT AUTHORITY\SYSTEM privileges, which allowed us to enumerate the filesystem for flags and extract NTLM password hashes from the SAM database.
+Metasploit Exploitation was a room that focused on the fundamentals of the **Metasploit Framework** and legacy service exploitation. We started by performing an **Nmap** scan to identify an unpatched Windows 7 target, followed by vulnerability verification using an SMB scanner to confirm the presence of MS17-010. From there, we utilized the EternalBlue exploit to obtain an interactive Meterpreter session with NT AUTHORITY\SYSTEM privileges, which allowed us to enumerate the filesystem for flags and extract **NTLM** password hashes from the **SAM database**.
 
 This writeup details the exploitation of a legacy Windows system, specifically focusing on the transition from initial reconnaissance to full system compromise using the Metasploit Framework.
 
 ## Initial Enumeration
 Nmap Scan
 We begin starting with **nmap** scan inside msfconsole: 
-```bash msf > nmap -sS -sV -sC -p- 10.112.163.200 
+```
+ msf > nmap -sS -sV -sC -p- 10.112.163.200 
 [*] exec: nmap -sS -sV -sC -p- 10.112.163.200 
 
 Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-10 13:18 +0300
