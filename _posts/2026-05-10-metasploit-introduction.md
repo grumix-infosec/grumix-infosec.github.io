@@ -5,7 +5,7 @@ date: 2026-05-10 14:10:00 +0300
 categories: [Writeups, TryHackMe]
 tags: [metasploit, windows, eternalblue, ms17-010]
 render_with_liquid: false
-media_subpath: /images/Metasploit_Introduction_EternalBlue/
+media_subpath: assets/img/Metasploit_Introduction_TryHackMe_Writeup/metasploitintro.webp
 ---
 Compromising Windows 7 via MS17-010 (EternalBlue) - A Metasploit Writeup for TryHackMe
 
