@@ -1,5 +1,5 @@
 ---
-title: Metasploit Introduction - TryHackMe Writeup
+title: Compromising Windows 7 via MS17-010 (EternalBlue) - A Metasploit Writeup for TryHackMe
 author: Grumix
 date: 2026-05-10 14:10:00 +0300
 categories: [Writeups, TryHackMe]
@@ -7,7 +7,6 @@ tags: [metasploit, windows, eternalblue, ms17-010]
 render_with_liquid: false
 media_subpath: assets/img/Metasploit_Introduction_TryHackMe_Writeup/metasploitintro.webp
 ---
-Compromising Windows 7 via MS17-010 (EternalBlue) - A Metasploit Writeup for TryHackMe
 
 Metasploit Exploitation was a room that focused on the fundamentals of the **Metasploit Framework** and legacy service exploitation. We started by performing an **Nmap** scan to identify an unpatched Windows 7 target, followed by vulnerability verification using an SMB scanner to confirm the presence of MS17-010. From there, we utilized the EternalBlue exploit to obtain an interactive Meterpreter session with NT AUTHORITY\SYSTEM privileges, which allowed us to enumerate the filesystem for flags and extract **NTLM** password hashes from the **SAM database**.
 
